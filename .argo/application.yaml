@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cicd-automation-demo
-  namespace: argocd
+  namespace: argowave
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: deployments-notification
-    notifications.argoproj.io/subscribe.on-deployed.slack: deployments-notification
-    notifications.argoproj.io/subscribe.on-sync-failed.slack: deployments-notification
-    notifications.argoproj.io/subscribe.on-health-degraded.slack: deployments-notification
-    notifications.argoproj.io/subscribe.on-sync-status-unknown.slack: deployments-notification
-    notifications.argoproj.io/subscribe.on-sync-status-running.slack: deployments-notification
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: argo
+    notifications.argoproj.io/subscribe.on-deployed.slack: argo
+    notifications.argoproj.io/subscribe.on-sync-failed.slack: argo
+    notifications.argoproj.io/subscribe.on-health-degraded.slack: argo
+    notifications.argoproj.io/subscribe.on-sync-status-unknown.slack: argo
+    notifications.argoproj.io/subscribe.on-sync-status-running.slack: argo
 spec:
   destination:
     namespace: default

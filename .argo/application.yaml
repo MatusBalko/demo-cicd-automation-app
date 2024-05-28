@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cicd-automation-demo
-  namespace: argowave
+  namespace: argocd
   annotations:
     notifications.argoproj.io/subscribe.on-sync-succeeded.slack: argo
     notifications.argoproj.io/subscribe.on-deployed.slack: argo

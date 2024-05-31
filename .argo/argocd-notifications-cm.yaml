@@ -15,10 +15,10 @@ data:
     token: $slack-token
   service.webhook.slack_webhook: >
     url:
-    https://hooks.slack.com/services/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
-    
+    your_webhook_url
+  
     headers:
-    
+
     - name: Content-Type
       value: application/json
   template.app-deployed: |
